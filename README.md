@@ -1,4 +1,4 @@
-# Modal isng Javascript
+# Modal using Javascript
 
 ## Creation of files
 create my html, css, and javascript files.
