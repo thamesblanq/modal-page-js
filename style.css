@@ -18,9 +18,9 @@ section .modal-container {
     width: 300px;
     height: 200px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 30%;
+    transform: translate(-30%, -50%);
     background-color: rgba(0, 0, 0, 0.589);
     padding: 2em;
     border-radius: 10px;
@@ -54,6 +54,7 @@ section .container {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     opacity: 0;
+    position: fixed;
     display: none;
     transition: all 1s ease-in;
 }
@@ -67,25 +68,37 @@ section .container .hidden-text {
     width: 300px;
     height: 200px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 40%;
+    transform: translateY(0%);
+    transform: translateX(-40%);
     background-color: whitesmoke;
     padding: 1em;
     border-radius: 10px;
     box-shadow: 0px 0px 13px black;
+    animation: down 10s ease;
 }
 
-/* @keyframes down {
-     50% {
-        transform: translateY(50%);
+@keyframes down {
+     0% {
+        transform: translateY(-150%);
     } 
-    100% {
-        transform: translateY(100%);
+
+    25% {
+        transform: translateY(-100%);
+
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+
+    100%{
+        transform: translateY(0%);
+        transform: translateX(-40%);
     }
     
 }
- */
+
 section .container .hidden-text button {
     color: red;
     display: block;
