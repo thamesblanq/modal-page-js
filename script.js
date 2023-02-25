@@ -13,3 +13,11 @@ closeBtn.addEventListener('click', () => {
   container.style.opacity = 0;  
   container.style.display = 'none'; 
 })
+
+window.addEventListener('click', function(e) {
+    if(e.target === container){
+        container.classList.remove('show');
+        container.style.opacity = 0;  
+        container.style.display = 'none'; 
+    }
+})
