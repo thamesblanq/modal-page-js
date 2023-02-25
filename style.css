@@ -3,3 +3,114 @@
     padding: 0;
     box-sizing: border-box;
 }
+section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(modal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+section .modal-container {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.589);
+    padding: 2em;
+    border-radius: 10px;
+
+}
+
+section .modal-container p {
+    margin-bottom: 1.5em;
+    font-size: 2rem;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+section .modal-container .modal-btn {
+    padding: 0.5em 1em;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+section .modal-container .modal-btn:hover, section .modal-container .modal-btn:focus {
+    background-color: black;
+    color: whitesmoke;
+}
+
+section .container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    display: none;
+    transition: all 1s ease-in;
+}
+
+.show {
+    opacity: 1;
+    display: block;
+}
+
+section .container .hidden-text {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px black;
+}
+
+/* @keyframes down {
+     50% {
+        transform: translateY(50%);
+    } 
+    100% {
+        transform: translateY(100%);
+    }
+    
+}
+ */
+section .container .hidden-text button {
+    color: red;
+    display: block;
+    padding: 0.5em;
+    float: right;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+section .container .hidden-text button:hover, section .container .hidden-text button:focus {
+    transform: scale(1.2);
+}
+
+section .container .hidden-text p {
+    margin-top: 3em;
+    margin-left: 1em;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.show {
+    opacity: 1;
+    display: block;
+}
